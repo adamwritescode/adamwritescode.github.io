@@ -4,7 +4,10 @@ var sandBox = [];
 // var bg;
 
 function setup() {
-  var theCanvas = createCanvas(680, 390);
+  // TESTING WEBGL - COMMENT OUT WEBGL CANVAS DECLARATION AND UNCOMMENT TWO-PARAMETER CANVAS DECLARATION WHEN DONE
+  // var theCanvas = createCanvas(680, 390);// CANVAS CANVAS
+
+  var theCanvas = createCanvas(680, 390, WEBGL); // WEBGL CANVAS`
   theCanvas.parent('canvas');
   // bg = loadImage("img/zengarden-bg.png"); // load bg image
   for(var i = 0; i < ((width * height))/32; i++){
