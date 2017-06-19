@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Adam Rosado">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>#####IMAGE TEST#####</title>
+  <link href="style.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.min.js"></script>
+  <script src="imagetest.js"></script>
+</head>
+<body>
+  <!-- Where the magic happens -->
+  <canvas id="c" width="800" height="600"></canvas>
+  <script>
+  var canvas = new fabric.Canvas('c');
+
+  fabric.Image.fromURL('img/stone00.png', function(img){
+    canvas.add(img);
+  });
+
+
+  </script>
+  <img src="img/rake00.png" alt="rake" width="400" height="1200" id="rake00" />
+  <img src="img/rake01.png" alt="rake" width="400" height="1200" id="rake01" />
+  <img src="img/stone00.png" alt="stone" width="277" height="256" id="stone00" />
+</body>
+</html>
